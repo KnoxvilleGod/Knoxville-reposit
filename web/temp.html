@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <form name="Сообщения" action="message" method="post">
+        <textarea rows="30" cols="50" placeholder="Тут появится ваше сообщение)"></textarea>
+        <input type="button" value="Отправить сообщение">
+        <button>Отправить сообщение</button>
+    </form>
+</body>
+</html>
+1 Cпособ
+req.addParam или )req.setAttri...("ключ ", значение)//получаем параметры и записываем
+req.getDespatcherServlet("файл.jsp").forvard(req,resp) //отправляем сервлет за файлом jsp
+в jsp мы пишем
+страничка jsp бла бла бла и далее
+<div>
+    ${ключ} //получим в отрисовке jsp значение
+</div>
+2 способ
+вместо req.setAttri...("ключ ", значение)
+пишем req.setContecst().setAttri...
+Как правило, обычно используют 1-ый способ)))

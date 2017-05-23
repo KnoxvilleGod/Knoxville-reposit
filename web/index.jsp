@@ -1,21 +1,21 @@
-
+<%--
+  Created by IntelliJ IDEA.
+  User: User
+  Date: 20.05.2017
+  Time: 16:18
+  To change this template use File | Settings | File Templates.
+--%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<!DOCTYPE html>
 <html>
   <head>
-    <title>Register</title>
+    <title>Молодежный чат</title>
   </head>
   <body>
-  <h3>Пожалуйста, введите необходимые данные</h3>
-  <form name="Личные данные" action="register" method="post">
-    <label>Введите ваше имя</label> <input type="text" title="Введите ваш никнейм" name="txt_name"><br/><br/>
-
-    <label>Введите вашу фамилию</label><input type="text" title="Введите фамилию" name="txt_surname"><br/><br/>
-
-    <label>Введите ваш пароль</label> <input type="password" title="Ввудите ваш пароль" name="numb_password"><br/><br/>
-    <input type="submit" value="Зарегестриваться">
-    <form name="Возврат к форме" action=>
-      <input type="submit" value="Вернуться назад к форме">
-    </form>
-    </form>
+  <h3>Перед тем как зайти в чат, укажите, как вас величать)))</h3>
+      <form name="Никнейм" action="nickname" method="post">
+        <label>Введите ваш никнейм</label><input type="text" name="txt_nickname"><br/><br/>
+        <input type="submit" value="Войти в чат">
+      </form>
   </body>
 </html>
